@@ -19,21 +19,36 @@ class First extends StatelessWidget {
                   width: double.infinity,
                   height: 350,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15.0),
-                    image: const DecorationImage(
-                      fit: BoxFit.fill,
-                      image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqUYWK2ER12rKqvZmJGKNgZRGPu_kTwXxHBg&usqp=CAU")
-                    )
-                  ),
+                      borderRadius: BorderRadius.circular(15.0),
+                      image: const DecorationImage(
+                          fit: BoxFit.fill,
+                          image: NetworkImage(
+                              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqUYWK2ER12rKqvZmJGKNgZRGPu_kTwXxHBg&usqp=CAU"))),
                 ),
-                const SizedBox(height: 15,),
-                const Text("Jacob Roberts", style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
-                const SizedBox(height: 10,),
-                Text("Flutter Developer, I have a good skills in English and Program.", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.grey[400]),),
-                const SizedBox(height: 15,),
+                const SizedBox(
+                  height: 15,
+                ),
+                const Text(
+                  "Jacob Roberts",
+                  style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                Text(
+                  "Flutter Developer, I have a good skills in English and Program.",
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.grey[400]),
+                ),
+                const SizedBox(
+                  height: 15,
+                ),
                 // container have row then this row have stack
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 15),
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 25.0, vertical: 15),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(35.0),
                     color: Colors.grey[300],
@@ -45,9 +60,17 @@ class First extends StatelessWidget {
                       Row(
                         mainAxisSize: MainAxisSize.min,
                         children: const [
-                          Text("112", style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),),
-                          SizedBox(width: 10,),
-                          Text("Works", style: TextStyle(fontSize: 20, fontWeight: FontWeight.normal)),
+                          Text(
+                            "112",
+                            style: TextStyle(
+                                fontSize: 32, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          Text("Works",
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.normal)),
                         ],
                       ),
                       Stack(
@@ -96,22 +119,68 @@ class First extends StatelessWidget {
                           ),
                         ],
                       )
-
-
                     ],
                   ),
                 ),
-                const SizedBox(height: 15,),
+                const SizedBox(
+                  height: 15,
+                ),
                 // row have 2 simple container
-                Row(),
-                const SizedBox(height: 15,),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      width: 150,
+                      height: 100,
+                      padding: const EdgeInsets.all(20.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(35.0),
+                        color: Colors.indigo,
+                      ),
+                      child: Column(
+                        children: const [
+                          Text("3", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28, color: Colors.white),),
+                          Text("applications", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.white),),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 150,
+                      height: 100,
+                      padding: const EdgeInsets.all(20.0),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(35.0),
+                        color: Colors.grey[300],
+                      ),
+                      child: Column(
+                        children: const [
+                          Text("25", style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold,),),
+                          Text("views today",  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.grey),),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 15,
+                ),
                 // container have row then this row have three icons
-                Container(),
-
-
-
-
-
+                Container(
+                  padding: const EdgeInsets.all(30.0),
+                  decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: const [
+                      Icon(Icons.person, color: Colors.indigo, size: 32,),
+                      Icon(Icons.search, size: 32,),
+                      Icon(Icons.settings, size: 32,)
+                    ],
+                  )
+                  ,
+                ),
               ],
             ),
           ),

@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:zezo/screen/first.dart';
+import 'package:zezo/screen/second.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const First(),
+      home: const Second(),
     );
   }
 }
