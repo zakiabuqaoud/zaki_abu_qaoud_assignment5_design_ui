@@ -150,6 +150,7 @@ class Second extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 40,),
+              const Spacer(),
               Container(
                 padding: const EdgeInsets.all(30.0),
                 decoration: BoxDecoration(
